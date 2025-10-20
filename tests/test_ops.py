@@ -1,4 +1,4 @@
-from src.math_ops import add, subtract, multiply, divide
+from ..src.math_ops import add, subtract, multiply, divide
 import pytest
 
 def test_add():
