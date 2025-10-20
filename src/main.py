@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from .math_ops import add, subtract, multiply, divide
+from src.math_ops import add, subtract, multiply, divide
 
 app = FastAPI(title="Math Operations API")
 

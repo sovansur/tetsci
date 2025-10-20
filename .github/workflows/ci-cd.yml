@@ -24,8 +24,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    # ✅ Set PYTHONPATH so src is importable
     - name: Run tests
-      run: python -m pytest tests --maxfail=1 --disable-warnings -q
+      run: PYTHONPATH=. python -m pytest tests --maxfail=1 --disable-warnings -q
 
     - name: Simulate Deployment
       if: success()
